@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Znajdź skarb!</title>
+</head>
+<body>
+<h1 id="nagłówek">Znajdź ukryty skarb!</h1>
+<img id="mapa" width=400 height=400 src="C:\Users\User1\Downloads\Skype\All\Skarb\treasuremap.jpg"alt="Coś nie wyszło."/>
+<p id = "odległość"> </p>
+<script src = "https://code.jquery.com/jquery-2.1.0.js"></script>
+<script>
+//kod gry
+
+//losowanie miejca na mapie:
+var uzyskajLosowaLiczbe = function(rozmiar) {
+	return Math.floor(Math.random() * rozmiar);
+};
+var szerokosc = 400;
+var wysokosc = 400;
+var cel = {
+x: uzyskajLosowaLiczbe(szerokosc),
+y: uzyskajLosowaLiczbe(wysokosc)
+};
+
+//obsługa kliknięcia:
+var kliknięcia = 0;
+var obliczOdleglosc = function(zdarzenie, cel) {
+var roznicaX = zdarzenie.offsetX - cel.x;
+var roznicaY = zdarzenie.offsetY - cel.y;
+return Math.sqrt((roznicaX * roznicaX) + (roznicaY * roznicaY));
+};
+var odległość = obliczOdleglosc(zdarzenie, cel);
+var podpowiedź = skonstruujPodpowiedz(odległość);
+var skonstruujPodpowiedz = function(odległość) {
+if (odległość < 10) {
+	return "Parzy!";
+} else if (odległość < 20) {
+	return "Gorąco!";
+} else if (odległość < 40) {
+	return "Ciepło!";
+} else if (odległość < 80) {
+	return "Letnio";
+} else if (odległość < 160) {
+	return "Zimno!";
+} else if (odległość < 320) {
+	return "Mroźno!";
+} else {
+	return "Mróz jak na Syberii!!! Szukaj gdzie indziej!";
+}
+};
+var zdarzenie = $("#mapa").click(function (zdarzenie) {
+var zdarzenie = $("#mapa").click(function (zdarzenie) {
+	//miejsce na funkcję obsługi kliknięcia
+	$("#odległość").text(podpowiedź);
+});
+</script>
+</body>
+</html>
