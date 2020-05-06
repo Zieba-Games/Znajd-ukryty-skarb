@@ -1,4 +1,4 @@
-# Znajd-ukryty-skarb
+# Znajdź ukryty skarb
 Znajdź ukryty skarb!
 Find the hidden treasure!
 
