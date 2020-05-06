@@ -5,5 +5,5 @@ Find the hidden treasure!
 Prosta gra przeglądarkowa.
 Simple browser game.
 
-Tylko po polsku.
-Only in polish.
+Tylko po polsku. Tylko na Windows.
+Only in polish. Only for Windows.
