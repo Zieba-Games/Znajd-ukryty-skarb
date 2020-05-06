@@ -6,4 +6,5 @@ Prosta gra przeglądarkowa.
 Simple browser game.
 
 Tylko po polsku. Tylko na Windows.
+
 Only in polish. Only for Windows.
