@@ -31,8 +31,7 @@ var roznicaX = zdarzenie.offsetX - cel.x;
 var roznicaY = zdarzenie.offsetY - cel.y;
 return Math.sqrt((roznicaX * roznicaX) + (roznicaY * roznicaY));
 };
-var odległość = obliczOdleglosc(zdarzenie, cel);
-var podpowiedź = skonstruujPodpowiedz(odległość);
+
 var skonstruujPodpowiedz = function(odległość) {
 if (odległość < 10) {
 	return "Parzy!";
@@ -50,11 +49,13 @@ if (odległość < 10) {
 	return "Mróz jak na Syberii!!! Szukaj gdzie indziej!";
 }
 };
-var zdarzenie = $("#mapa").click(function (zdarzenie) {
-var zdarzenie = $("#mapa").click(function (zdarzenie) {
+
+ $("#mapa").click(function (zdarzenie) {
 	//miejsce na funkcję obsługi kliknięcia
+	var odległość = obliczOdleglosc(zdarzenie, cel);
+	var podpowiedź = skonstruujPodpowiedz(odległość);
 	$("#odległość").text(podpowiedź);
-}
+
 }
 );
 </script>
