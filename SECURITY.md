@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
- which versions of game project are supported
+ which versions of game are supported
 
 
 | Version | Supported          |
