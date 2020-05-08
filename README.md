@@ -8,3 +8,5 @@
 ### Tylko po polsku. Tylko na Windows.
 
 ### Only in polish. Only for Windows.
+
+#### By Zięba Games
