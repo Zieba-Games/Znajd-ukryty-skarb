@@ -14,4 +14,6 @@
 
 ## Reporting a Vulnerability
 
-Report a Vulnerability to bruniaczu@gmail.com
+Report a Vulnerability to bruniaczu@gmail.com with title "Znajdź ukryty skarb Bug/Vulnerability" in polish or english
+
+Zgłoś usterkę lub błąd bezpieczeństwa na bruniaczu@gmail.com z tytułem „Znajdź ukryty skarb Bug / Vulnerability” w języku polskim lub angielskim
