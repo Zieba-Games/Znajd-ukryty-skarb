@@ -1,10 +1,10 @@
 # Znajdź ukryty skarb
-Znajdź ukryty skarb!
-Find the hidden treasure!
+### Znajdź ukryty skarb!
+### Find the hidden treasure!
 
-Prosta gra przeglądarkowa.
-Simple browser game.
+### Prosta gra przeglądarkowa.
+### Simple browser game.
 
-Tylko po polsku. Tylko na Windows.
+### Tylko po polsku. Tylko na Windows.
 
-Only in polish. Only for Windows.
+### Only in polish. Only for Windows.
