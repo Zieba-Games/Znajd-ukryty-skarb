@@ -5,12 +5,12 @@
 </head>
 <body>
 <h1 id="nagłówek">Znajdź ukryty skarb!</h1>
-<img id="mapa" width=400 height=400 src="Skarb\treasuremap1.jpg"alt="Na razie gra jeszcze nie jest gotowa. Jeśli chcesz pomóc chodź do nas na https://github.com/Zieba-Games/Znajd-ukryty-skarb/ "/>
+<img id="mapa" width=400 height=400 src="treasuremap1.jpg"alt="Na razie gra jeszcze nie jest gotowa. Jeśli chcesz pomóc chodź do nas na https://github.com/Zieba-Games/Znajd-ukryty-skarb/ "/>
 <p id = "odległość"> </p>
 <script src = "https://code.jquery.com/jquery-2.1.0.js"></script>
 <script>
 //Zięba games nie ma żadnych praw do tego kodu. Zięba Games ma ograniczoną odpowiedzialność za ten kod. W stosunku do tego kodu 
-///niedozwolone są jedynie  wykorzystanie znaku towarowego i zastosowanie patentowe
+///niedozwolone są jedynie  wykorzystanie znaku towarowego i zastosowanie patentowe.
 
 //kod gry
 
@@ -34,7 +34,11 @@ return Math.sqrt((roznicaX * roznicaX) + (roznicaY * roznicaY));
 };
 
 var skonstruujPodpowiedz = function(odległość) {
-if (odległość < 10) {
+    if (odległość < 5) {
+        $("#nagłówek").text("Wygrałeś!")
+        return "Gratulacje! Zajęło ci to tylko " + kliknięcia + " kliknięć!"
+    }
+    else if (odległość < 10) {
 	return "Parzy!";
 } else if (odległość < 20) {
 	return "Gorąco!";
@@ -56,6 +60,7 @@ if (odległość < 10) {
 	var odległość = obliczOdleglosc(zdarzenie, cel);
 	var podpowiedź = skonstruujPodpowiedz(odległość);
 	$("#odległość").text(podpowiedź);
+	kliknięcia++
 
 }
 );
